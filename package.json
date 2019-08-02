@@ -9,7 +9,11 @@
         "chiquito",
         "fistrum"
     ],
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/antonrodin/chiquito-ipsum"
+    },
     "engines": {
         "vscode": "^1.36.0"
     },
