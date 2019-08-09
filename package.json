@@ -1,31 +1,62 @@
 {
-    "name": "loremchiquito",
-    "displayName": "Lorem Chiquito Fistrum",
-    "description": "Visual studio code snippets extension for Chiquito Lorem Fistrum",
-    "license": "MIT",
-    "keywords": [
-        "snippets",
-        "lorem",
-        "chiquito",
-        "fistrum"
+  "name": "loremchiquito",
+  "displayName": "Lorem Chiquito Fistrum",
+  "description": "Visual studio code snippets extension for Chiquito Lorem Fistrum",
+  "license": "MIT",
+  "keywords": [
+    "snippets",
+    "lorem",
+    "chiquito",
+    "fistrum"
+  ],
+  "publisher": "azr",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonrodin/chiquito-ipsum"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": [
+          "Vue",
+          "vue"
+        ],
+        "extensions": [
+          ".vue"
+        ],
+        "configuration": "./syntaxes/vue.configuration.json"
+      }
     ],
-    "version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/antonrodin/chiquito-ipsum"
-    },
-    "engines": {
-        "vscode": "^1.36.0"
-    },
-    "categories": [
-        "Snippets"
+    "grammars": [
+      {
+        "language": "vue",
+        "scopeName": "text.html.vue",
+        "path": "./syntaxes/vue.tmLanguage"
+      }
     ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "__metadata": {
+    "id": "274dddb0-c6b3-416f-b9c3-e3bd69cbdd60",
+    "publisherId": "02318536-f61c-46a2-962f-74af1f78913a",
+    "publisherDisplayName": "Anton Zekeriev Rodin"
+  }
 }
